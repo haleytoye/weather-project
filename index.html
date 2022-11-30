@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./src/style.css" class="style" />
+
+    <script
+      src="https://kit.fontawesome.com/1d5eee0cac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6" id="search-bar">
+              <input
+                type="search"
+                placeholder="Search for a city..."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-2 btn-column">
+              <button
+                type="submit"
+                class="btn btn-light shadow-sm"
+                id="btn-submit"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-light shadow-sm" id="btn-current-location">
+                Current Location
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-6">
+            <div class="location">
+              <h1 id="city">Weather Today</h1>
+            </div>
+            <div class="date-time">Monday, November 17:50</div>
+            <div class="row">
+              <div class="col-6">
+                <i class="fas fa-cloud-rain" id="weather-now"></i>
+              </div>
+              <div class="col-6" id="current-data">
+                <span id="temperature">20</span>
+
+                <span class="temp-change">
+                  <a href="#" id="cel">°C</a> |
+                  <a href="#" id="far">°F</a>
+                </span>
+
+                <div class="more-info">
+                  <span class="description">Rainy</span>
+                  <br />
+                  <span class="humidity-info">Humidity: 80%</span>
+                  <br />
+                  <span class="wind-info">Wind: 26 km/h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h3 class="forecast">Forecast</h3>
+            <div class="row">
+              <div class="col-3">
+                <ul class="days">
+                  <li>Tuesday</li>
+                  <li>Wednesday</li>
+                  <li>Thursday</li>
+                  <li>Friday</li>
+                  <li>Saturday</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul class="icons">
+                  <li><i class="fas fa-sun"></i></li>
+                  <li><i class="fas fa-sun"></i></li>
+                  <li>
+                    <i class="fas fa-cloud-sun"></i>
+                  </li>
+                  <li><i class="fas fa-cloud-sun"></i></li>
+                  <li><i class="fas fa-cloud-rain"></i></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="temps">
+                  <li>7 ºC / -1 ºC</li>
+                  <li>7 ºC / -1 ºC</li>
+                  <li>14 ºC / 5 ºC</li>
+                  <li>15 ºC / 8 ºC</li>
+                  <li>16 ºC / 9 ºC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/index.js"></script>
+</html>

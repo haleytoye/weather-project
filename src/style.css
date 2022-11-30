@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 2.5%;
+}
+
+.weather-app {
+  max-width: 700px;
+  border: 2px solid #1264a3;
+  border-radius: 10px;
+  padding: 30px 30px 30px 50px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#search-bar {
+  padding-right: 0;
+}
+#btn-column {
+  margin-left: 0;
+  padding: 0;
+}
+#btn-submit:hover {
+  background-color: darkgray;
+}
+
+#btn-current-location {
+  background-color: #1264a3;
+  color: white;
+}
+
+#btn-current-location:hover {
+  background-color: #0d4c7c;
+}
+.city {
+  color: #5a6275;
+  font-size: 22px;
+}
+
+.fa-search {
+  font-size: 15px;
+}
+
+.search-form {
+  margin-bottom: 30px;
+}
+
+#weather-now {
+  font-size: 85px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#current-data {
+  margin-top: 40px;
+}
+#weather-now {
+  margin-top: 40px;
+}
+.more-info {
+  font-size: 10pt;
+  line-height: 20px;
+}
+.description {
+  text-transform: capitalize;
+}
+.location {
+  color: #7c7c7c;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin: 0;
+}
+
+.date-time {
+  color: #7c7c7c;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 28px;
+  margin: 0;
+}
+
+.fa-cloud-rain {
+  margin-right: 10px;
+  color: rgb(5, 90, 155);
+  text-align: center;
+}
+
+.forecast {
+  color: #5a6275;
+}
+.days {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+.days,
+.temps {
+  font-size: 10pt;
+  line-height: 30pt;
+}
+
+.icons {
+  text-align: center;
+  font-size: 20pt;
+  line-height: 30pt;
+}
+
+.fa-cloud-sun {
+  color: rgba(197, 213, 234, 0.691);
+}
+.fa-sun {
+  color: #e68f0e;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  font-weight: bolder;
+}
